@@ -1,0 +1,41 @@
+body{
+    
+    background-color: black;
+    margin:0;
+}
+
+.container{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: white; */
+}
+#sun{
+    display:flex;
+    background-color: rgb(255, 255, 86);
+    height: 100px;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(255, 81, 0);
+}
+
+#earth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 127, 207);
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+    position:relative;
+    box-shadow: 0px 0px 15px rgb(139, 170, 255);
+    color: white;
+    /* transition: transform 1s linear; */
+    
+}
