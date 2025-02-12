@@ -1,4 +1,5 @@
 const earth=document.getElementById("earth");
+const moon=document.getElementById("moon");
 const body=document.querySelector("body");
 const time=new Date();
 
@@ -7,6 +8,11 @@ const radius=250;
 const angularVelocity=1;
 const timePeriod=5;
 const frequency=0.1;
+//moon properties
+let moon_Radius=100;
+const moon_AngularVelocity=1;
+const moon_TimePeriod=5;
+let moon_Frequency=1;
 
 
 initTime=time.getTime();
@@ -41,7 +47,7 @@ for(let i=0;i<=100;i++){
     console.log(star.style.width)
 }
 
-
+//earth revolution
 a=setInterval(()=>{
     newTime=new Date();
     currentTime=newTime.getTime();
@@ -57,4 +63,17 @@ a=setInterval(()=>{
     //     console.log(runTime.toFixed(2));
     // }
 },1);
+
+//moon revolution
+b=setInterval(()=>{
+    
+    newTime=new Date();
+    currentTime=newTime.getTime();
+    currentTime=(currentTime/1000);
+    let runTime=(currentTime-initTime);
+    let phase=(2*Math.PI*moon_Frequency)*runTime;
+    let x=moon_Radius*Math.cos(phase);
+    let y=moon_Radius*Math.sin(phase);
+    moon.style.transform=`translate(${x}px,${y}px)`;
+},1)
 
