@@ -34,7 +34,7 @@ for(let i=0;i<=100;i++){
     let color=`hsl(${h},${s}%,${l}%)`
     star.style.backgroundColor=color;
     //glow
-    star.style.boxShadow=`0px 0px 10px hsl(${h},70%,50%)`
+    star.style.boxShadow=`0px 0px 10px 1px hsl(${h},70%,50%)`
     
     star.classList.add("star");
     body.append(star);
