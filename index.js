@@ -4,15 +4,15 @@ const body=document.querySelector("body");
 const time=new Date();
 
 //earth properties
-const radius=250;
+const radius=350;
 const angularVelocity=1;
 const timePeriod=5;
-const frequency=0.1;
+const frequency=0.07;
 //moon properties
 let moon_Radius=100;
 const moon_AngularVelocity=1;
 const moon_TimePeriod=5;
-let moon_Frequency=1;
+let moon_Frequency=0.3;
 
 
 initTime=time.getTime();
